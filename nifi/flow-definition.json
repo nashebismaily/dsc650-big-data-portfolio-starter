@@ -1,0 +1,5 @@
+{
+  "_portfolio_starter": true,
+  "_instructions": "Replace this file with your exported NiFi flow definition if your instructor/course policy allows it.",
+  "_warning": "Do not publish credentials, sensitive parameters, certificates, or secrets."
+}

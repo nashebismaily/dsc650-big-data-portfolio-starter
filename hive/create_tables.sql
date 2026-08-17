@@ -1,0 +1,14 @@
+-- DSC 650 Portfolio Starter
+-- Replace this file with the Hive DDL from your final project.
+--
+-- Before publishing:
+--   1. Remove credentials or environment-specific secrets.
+--   2. Add short comments explaining important tables.
+--   3. Keep the SQL that best demonstrates your work.
+
+-- Example structure only:
+-- CREATE EXTERNAL TABLE your_table (
+--     id STRING,
+--     ...
+-- )
+-- STORED AS ...;
