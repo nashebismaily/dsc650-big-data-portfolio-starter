@@ -1,17 +1,13 @@
 # Architecture
 
-Place the final architecture diagram for your DSC 650 project in this folder.
+The project architecture follows the required DSC 650 end-to-end pipeline:
 
-The included `architecture-diagram.png` is a **reference diagram only**. Replace or modify it if your implementation differs.
+**Source Data → Apache NiFi → HDFS → Apache Hive → Apache Spark MLlib → Apache HBase**
 
-In the main README, explain:
+Spark workloads are submitted and managed through **YARN**.
 
-- the source of the data;
-- the role of NiFi;
-- where HDFS fits;
-- how Hive is used;
-- what Spark processes;
-- how HBase is used;
-- where final results are stored or viewed.
+The architecture diagram is stored at:
 
-Keep the diagram readable enough that someone can understand the system without opening the code.
+[`architecture-diagram.png`](architecture-diagram.png)
+
+The diagram provides the high-level view of the pipeline, while the component directories contain the implementation code, written explanations, and execution evidence for each stage.

@@ -1,41 +1,67 @@
 # Interview Talking Points
 
-Use this file to prepare a 60–90 second explanation of your project.
+Use this file to prepare a concise explanation of the project for a technical interview.
 
-## 30-second version
+## 30-Second Overview
 
-> I built an end-to-end big data pipeline using Apache NiFi, Hive, Spark, HBase, and Hadoop/HDFS. NiFi handled the flow of data into the environment, Hive provided SQL access, Spark performed distributed processing, and HBase demonstrated NoSQL retrieval. I preserved the architecture, code, and execution evidence in GitHub so the project can be reviewed even after the temporary cloud environment is shut down.
+> I built an end-to-end distributed data pipeline using Apache NiFi, HDFS, Hive, Spark MLlib, YARN, and HBase. NiFi ingested the source dataset into HDFS, Hive provided a managed SQL layer, Spark MLlib read the Hive data and trained and evaluated a machine learning model, YARN managed the Spark workload, and Spark persisted the model metrics into HBase. The repository preserves the architecture, code, and execution evidence so the implementation can be reviewed without a live cloud environment.
 
-Rewrite this in your own words and make it specific to your project.
+Rewrite this overview in your own words so it reflects your specific dataset and machine learning implementation.
 
-## Questions to be ready for
+## Be Ready to Explain
 
-### What did you personally build?
-Your answer:
+### What problem or analytical task did your dataset support?
 
-### Walk me through the data flow.
-Your answer:
+[Your answer]
+
+### Walk through the complete data flow.
+
+[Your answer]
 
 ### Why did you use NiFi?
-Your answer:
 
-### Why use Hive?
-Your answer:
+[Your answer]
 
-### What did Spark do?
-Your answer:
+### What role did HDFS play?
 
-### Why use HBase?
-Your answer:
+[Your answer]
 
-### What was the hardest technical problem?
-Your answer:
+### How did you design the Hive table?
+
+[Your answer]
+
+### What data did Spark read from Hive?
+
+[Your answer]
+
+### Which MLlib algorithm did you use and why?
+
+[Your answer]
+
+### How did you evaluate the model?
+
+[Your answer]
+
+### What did YARN do during Spark execution?
+
+[Your answer]
+
+### Why did you write model metrics into HBase?
+
+[Your answer]
+
+### How did the final HBase scan prove the pipeline worked?
+
+[Your answer]
+
+### What was the most difficult technical problem?
+
+[Your answer]
 
 ### How did you troubleshoot it?
-Your answer:
+
+[Your answer]
 
 ### What would you change for production?
-Your answer:
 
-### What did you learn?
-Your answer:
+[Your answer]

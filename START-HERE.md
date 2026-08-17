@@ -1,27 +1,69 @@
-# Start Here
+# Start Here — DSC 650 Final Project Repository
 
-This folder is a ready-made GitHub portfolio starter for the DSC 650 final project.
+This repository is the required starting structure for the DSC 650 final project.
 
-## Your job
+Your completed GitHub repository is the **final project submission**.
 
-1. Rename the repository to something professional.
-2. Open `README.md` and replace generic language with your actual implementation.
-3. Replace the reference architecture if your design differs.
-4. Replace every screenshot placeholder with your own project screenshot.
-5. Copy your final Hive SQL into `hive/`.
-6. Copy your final Spark code into `spark/`.
-7. Copy your final HBase commands into `hbase/`.
-8. Export/copy your NiFi flow into `nifi/` if allowed.
-9. Complete `docs/project-summary.md`.
-10. Run through `STUDENT-CHECKLIST.md`.
-11. Upload the contents of this folder to GitHub.
+## 1. Create Your Own Repository
 
-## Important
+Do not submit work or pull requests to the instructor's starter repository.
 
-Do not upload credentials, restricted data, private keys, or instructor solution files.
+1. Download or clone the DSC 650 Big Data Portfolio Starter.
+2. Create a **new GitHub repository under your own GitHub account**.
+3. Use a professional repository name, such as:
+   - `big-data-architecture-project`
+   - `distributed-data-pipeline`
+   - `nifi-spark-hive-hbase-pipeline`
+4. Copy the starter repository contents into your new repository.
+5. Push the starter files to your GitHub account.
+6. Complete the final project in your own repository.
 
-The goal is not to keep the Google Cloud environment running forever.
+## 2. Keep the Top-Level README
 
-The goal is to create a permanent, professional record of:
+The provided root [`README.md`](README.md) is already designed as the professional landing page for the project.
 
-**what you built + how it works + why you designed it that way + proof that it worked.**
+You do **not** need to rewrite the root README.
+
+Instead:
+
+- replace the screenshot placeholders with your own final-project screenshots;
+- replace the starter source-code files with your own working code;
+- complete the written explanations in the component README files;
+- complete [`docs/project-summary.md`](docs/project-summary.md).
+
+Because the root README references the required screenshot filenames, your own evidence will automatically appear on the portfolio landing page when you replace the placeholder images using the same filenames.
+
+## 3. Required End-to-End Flow
+
+Your completed implementation must follow:
+
+**Source Data → NiFi → HDFS → Hive → Spark MLlib → HBase**
+
+Spark must be submitted through **YARN** using `spark-submit`.
+
+## 4. Where Your Work Goes
+
+| Objective | Location |
+|---|---|
+| NiFi → HDFS | `nifi/` |
+| Hive managed table | `hive/` |
+| Environment setup | `docs/` |
+| HBase table creation | `hbase/` |
+| PySpark MLlib | `spark/` |
+| Spark submit / YARN | `spark/` |
+| Final HBase verification | `hbase/` |
+| Overall summary / challenges | `docs/project-summary.md` |
+
+## 5. Replace Every Placeholder
+
+Before submission, make sure every placeholder code file and screenshot has been replaced with your own work.
+
+Use the required filenames exactly so the root README displays your evidence correctly.
+
+See [`STUDENT-CHECKLIST.md`](STUDENT-CHECKLIST.md) before submitting.
+
+## 6. Submit
+
+Submit the **GitHub URL for your completed repository** in the Week 11 Final Project assignment area.
+
+Your repository must be complete and accessible to the instructor at the time of submission.

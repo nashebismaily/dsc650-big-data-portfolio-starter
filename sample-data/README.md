@@ -1,13 +1,13 @@
-# Sample Data
+# Optional Sample / Project Data
 
-Only include a small, safe sample dataset if your course materials and data license allow it.
+The final-project dataset must be hosted on GitHub so NiFi can retrieve it using a direct/raw URL.
 
-Do **not** upload:
+You may store your dataset in this folder if:
 
-- private or sensitive information;
-- restricted datasets;
-- credentials;
-- large raw datasets;
-- proprietary data.
+- the file size is appropriate for GitHub;
+- the dataset license permits redistribution;
+- the data contains no sensitive, restricted, or personally identifiable information.
 
-If you cannot publish the dataset, describe its schema and purpose in the main README instead.
+If the dataset should not be committed to this repository, document the approved GitHub-hosted dataset URL in `docs/project-summary.md` instead.
+
+Do not use a course-provided example dataset for the final project.
