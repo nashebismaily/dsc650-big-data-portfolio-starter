@@ -4,19 +4,20 @@
 
 # DSC 650 — Big Data Architecture Final Project
 
-> **End-to-end data engineering and machine learning pipeline built across the Hadoop ecosystem.**
+> **End-to-end data engineering and machine learning pipeline built across the Hadoop ecosystem.**  
+> **Platform & Runtime:** Google Cloud Platform • Docker • Linux
 
 ## Project Overview
 
-This project delivers a complete big data pipeline that integrates **Apache NiFi, HDFS, Hive, Spark MLlib, YARN, and HBase** into a single end-to-end architecture.
+This project delivers a complete big data pipeline that integrates **Apache NiFi, HDFS, Hive, Spark MLlib, YARN, and HBase** into a single end-to-end architecture, deployed in a **Docker-based environment on Google Cloud Platform**.
 
-The implementation demonstrates how distributed data platforms work together to move data from ingestion through distributed storage, SQL access, machine learning, and persistent NoSQL results. The project combines data engineering, distributed processing, machine learning, cluster resource management, and system integration in one working pipeline.
+The implementation demonstrates how distributed data platforms work together to move data from ingestion through distributed storage, SQL access, machine learning, and persistent NoSQL results. The project combines **cloud infrastructure, containerization, data engineering, distributed processing, machine learning, cluster resource management, and system integration** in one working pipeline.
 
 ### End-to-End Data Flow
 
 **Source Data → Apache NiFi → HDFS → Apache Hive → Apache Spark MLlib → Apache HBase**
 
-Spark workloads are submitted through **YARN** for cluster resource management and execution.
+Spark workloads are submitted through **YARN** for cluster resource management and execution. The platform runs in a **Docker-containerized environment hosted on Google Cloud Platform**, providing an isolated and reproducible runtime for the distributed services.
 
 At a high level, the pipeline performs the following:
 
@@ -42,6 +43,8 @@ The architecture intentionally combines technologies that serve different respon
 
 | Layer | Technology | Responsibility |
 |---|---|---|
+| Cloud Infrastructure | Google Cloud Platform | Hosts the compute environment used to run the distributed platform |
+| Container Runtime | Docker | Provides isolated, reproducible service environments and networking |
 | Ingestion | Apache NiFi | Retrieve, route, and deliver source data into the platform |
 | Storage | HDFS | Persist the ingested dataset in distributed storage |
 | SQL / Structure | Apache Hive | Create a managed table and provide SQL-based validation and aggregation |
@@ -57,6 +60,8 @@ The result is a traceable data path from raw source data to persistent analytica
 
 | Capability | Implementation Evidence |
 |---|---|
+| Cloud deployment | Multi-service environment hosted on Google Cloud Platform |
+| Containerization | Docker-based service deployment, isolation, and networking |
 | Data ingestion | NiFi flow design, processor execution, and queue activity |
 | Distributed storage | HDFS listing confirming successful ingestion |
 | SQL data engineering | Hive managed-table creation, loading, querying, and aggregation |
@@ -269,7 +274,9 @@ Together, these artifacts provide traceable evidence that the pipeline executed 
 | Apache Spark MLlib | Processing and machine learning | Combines distributed computation with scalable model training and evaluation |
 | YARN | Resource management | Schedules and manages distributed Spark workloads across cluster resources |
 | Apache HBase | NoSQL results store | Persists Spark-generated metrics for direct retrieval and verification |
-| Google Cloud | Infrastructure | Provides the compute environment used to operate the multi-service architecture |
+| Google Cloud Platform | Cloud infrastructure | Provides the compute environment used to deploy and operate the multi-service architecture |
+| Docker | Container runtime | Provides isolated, reproducible service environments and networking for the distributed stack |
+| Linux | Operating system | Provides the underlying runtime for the cloud-hosted Docker environment |
 
 This design demonstrates a core distributed-systems principle: each technology performs the workload it is best suited for while participating in a cohesive end-to-end pipeline.
 
@@ -279,6 +286,8 @@ This design demonstrates a core distributed-systems principle: each technology p
 
 This project provides practical experience across multiple areas of modern data engineering and distributed systems:
 
+- Deploying and operating a multi-service environment on Google Cloud Platform
+- Working with Docker-based service isolation and networking
 - Designing a multi-stage data pipeline
 - Building and troubleshooting NiFi data flows
 - Working with distributed storage in HDFS
@@ -294,11 +303,11 @@ This project provides practical experience across multiple areas of modern data 
 
 ---
 
-## Cloud Environment Lifecycle
+## Cloud, Container & Runtime Environment
 
-The original project environment is deployed on **Google Cloud Platform** using temporary educational cloud resources.
+The project environment is deployed on **Google Cloud Platform** using temporary educational cloud resources. The distributed services run in a **Docker-containerized environment on Linux**, providing service isolation, repeatability, and a consistent runtime across the project stack.
 
-The live infrastructure is not required for this portfolio to remain useful. The repository preserves the technical implementation through source code, Hive SQL, NiFi flow definitions, HBase commands, architecture diagrams, screenshots, Spark execution evidence, machine learning results, and implementation documentation.
+The live infrastructure is not required for this portfolio to remain useful. The repository preserves the technical implementation through source code, Hive SQL, NiFi flow definitions, HBase commands, architecture diagrams, screenshots, Spark execution evidence, machine learning results, and implementation documentation. Together, **Google Cloud provides the infrastructure layer while Docker provides the containerized runtime for the distributed services**.
 
 This approach keeps the project reviewable after the temporary cloud environment has been decommissioned.
 
