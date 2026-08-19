@@ -21,13 +21,13 @@ Spark workloads are submitted through **YARN** for cluster resource management a
 
 At a high level, the pipeline performs the following:
 
-1. **Apache NiFi** retrieves the source dataset and writes it into HDFS.
+1. **Apache NiFi** retrieves the source dataset and writes it into **HDFS**.
 2. **HDFS** provides the distributed storage layer for the ingested data.
-3. **Apache Hive** creates a managed table and exposes the stored data through SQL.
+3. **Apache Hive** creates a managed table and exposes the stored data through **SQL**.
 4. **Apache Spark MLlib** reads the project data from Hive, prepares the data, trains a machine learning model, and evaluates the model.
 5. **YARN** manages execution of the Spark workload across the cluster.
-6. Spark writes model-performance metrics into **Apache HBase**.
-7. HBase scans verify that the machine learning metrics were successfully persisted.
+6. **Apache Spark** writes model-performance metrics into **Apache HBase**.
+7. **Apache HBase** scans verify that the machine learning metrics were successfully persisted.
 
 This repository preserves the architecture, source code, SQL, flow definitions, execution evidence, and results so the implementation can be reviewed even after the original Google Cloud environment is no longer running.
 
